@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Основні страви · Українські національні страви</title>
+    <meta name="description" content="Вареники, голубці та деруни: основні страви української кухні, начинки, складники й приготування.">
+    <meta name="theme-color" content="#27479b">
+    <link rel="icon" href="images/logo/logo.svg" type="image/svg+xml">
+    <link rel="preload" href="fonts/lora-var.woff" as="font" type="font/woff" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Перейти до змісту</a>
+    <header class="top">
+      <div class="wrap">
+        <a class="brand" href="index.html" aria-label="Страви України — на головну"> <img src="images/logo/logo.svg" width="54" height="54" alt=""> <span><b>Страви <span>України</span></b><small>національна кухня в малюнках</small></span> </a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Меню</button>
+        <nav id="nav" aria-label="Основне меню">
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="soups.html">Перші страви</a></li>
+            <li><a href="mains.html" aria-current="page">Основні страви</a></li>
+            <li><a href="snacks.html">Закуски та випічка</a></li>
+            <li><a href="holiday.html">Святковий стіл</a></li>
+            <li><a href="traditions.html">Традиції</a></li>
+            <li><a href="workshop.html">Майстерня</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-head">
+        <div class="wrap">
+          <p class="crumbs"><a href="index.html">Головна</a> / Основні страви</p>
+          <h1>Основні страви</h1>
+          <p>Тісто, картопля, капуста й сметана: із простих продуктів українська кухня робить страви, що годують родину та збирають усіх за одним столом.</p>
+        </div>
+      </section>
+      <div class="wrap">
+        <article class="dish" id="varenyky">
+          <div class="art">
+            <img src="images/static/varenyky.svg" alt="Мальована тарілка вареників-півмісяців зі защипаним краєм, сметаною, маслом і кропом" width="480" height="480" loading="lazy">
+          </div>
+          <div>
+            <span class="tag red">Улюблена страва</span>
+            <h2>Вареники</h2>
+            <p>Тістові «півмісяці» з начинкою: від картоплі й сиру до вишень. Вареники варять у киплячій підсоленій воді, доки вони не сплили, і подають зі сметаною, маслом чи шкварками.</p>
+            <p>У Гоголя в повісті «Ніч перед Різдвом» вареники самі перелітають із миски в сметану й до рота пана Пацюка — саме цей епізод оживає в анімації на головній сторінці.</p>
+            <div class="tabs">
+              <div role="tablist" aria-label="Начинки вареників">
+                <button role="tab" id="t1" aria-selected="true" aria-controls="p1">З картоплею</button>
+                <button role="tab" id="t2" aria-selected="false" aria-controls="p2" tabindex="-1">Із сиром</button>
+                <button role="tab" id="t3" aria-selected="false" aria-controls="p3" tabindex="-1">З вишнями</button>
+                <button role="tab" id="t4" aria-selected="false" aria-controls="p4" tabindex="-1">З капустою</button>
+              </div>
+              <div role="tabpanel" id="p1" aria-labelledby="t1">
+                <p>Картопляне пюре зі смаженою цибулею. Найситніший варіант: подають зі шкварками або зі сметаною.</p>
+              </div>
+              <div role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+                <p>Домашній сир із яйцем — солоний чи трохи підсолоджений. Класика зі сметаною.</p>
+              </div>
+              <div role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+                <p>Ягоди пересипають цукром. Вареники виходять соковитими, а вишневий сік додають до сметани.</p>
+              </div>
+              <div role="tabpanel" id="p4" aria-labelledby="t4" hidden>
+                <p>Тушкована капуста з цибулею — пісний варіант, який готують і на Святий вечір.</p>
+              </div>
+            </div>
+            <ul class="parts" aria-label="Основні складники">
+              <li>борошно</li>
+              <li>вода або кефір</li>
+              <li>сіль</li>
+              <li>начинка</li>
+              <li>сметана</li>
+              <li>масло</li>
+            </ul>
+            <details>
+              <summary>Як готують — коротко</summary>
+              <ol>
+                <li>Замісити тісто з борошна, води або кефіру та солі, дати відлежатися.</li>
+                <li>Розкачати та вирізати склянкою кружечки.</li>
+                <li>Покласти начинку й добре защипнути край.</li>
+                <li>Варити у великій кількості підсоленої води кілька хвилин після того, як вареники сплили.</li>
+                <li>Подавати одразу, поки гарячі.</li>
+              </ol>
+            </details>
+            <p class="note" style="margin-top:1.2rem"><b>Порада з кухні.</b> Защипуй край вологими пальцями — інакше вареник розійдеться у воді.</p>
+          </div>
+        </article>
+        <article class="dish" id="holubtsi">
+          <div class="art">
+            <img src="images/static/holubtsi.svg" alt="Мальовані голубці в томатному соусі, один розрізаний — видно рис і начинку, зверху сметана та кріп" width="480" height="480" loading="lazy">
+          </div>
+          <div>
+            <span class="tag ">Основна страва</span>
+            <h2>Голубці</h2>
+            <p>Капустяні листки, у які загорнуто начинку з рису та м’яса. Голубці тушкують у томатному чи сметанному соусі до м’якості. Є й пісні голубці — з грибами або гречкою.</p>
+            <p>Розрізаний голубець показує, з чого складається страва: шари листка, рис і м’ясо всередині.</p>
+            <ul class="parts" aria-label="Основні складники">
+              <li>капуста</li>
+              <li>рис</li>
+              <li>м’ясний фарш</li>
+              <li>цибуля</li>
+              <li>морква</li>
+              <li>томат або сметана</li>
+              <li>зелень</li>
+            </ul>
+            <details>
+              <summary>Як готують — коротко</summary>
+              <ol>
+                <li>Листки капусти обшпарити окропом, щоб стали гнучкими.</li>
+                <li>Змішати фарш, напівварений рис і смажену цибулю.</li>
+                <li>Загорнути начинку «конвертиком».</li>
+                <li>Щільно скласти в казанок і залити соусом.</li>
+                <li>Тушкувати під кришкою на слабкому вогні.</li>
+              </ol>
+            </details>
+            <p class="note" style="margin-top:1.2rem"><b>Порада з кухні.</b> Товсту жилку листка зріж ножем — голубці вийдуть охайнішими.</p>
+          </div>
+        </article>
+        <article class="dish" id="deruny">
+          <div class="art">
+            <img src="images/static/deruny.svg" alt="Мальовані деруни: золотисті картопляні оладки зі сметаною та кропом, поруч картоплина" width="480" height="480" loading="lazy">
+          </div>
+          <div>
+            <span class="tag green">Картопляна страва</span>
+            <h2>Деруни</h2>
+            <p>Золотисті оладки з тертої картоплі: хрусткі по краях, м’які всередині. У різних регіонах їх називають по-різному — наприклад, картопляниками.</p>
+            <p>Подають гарячими, одразу зі сковороди, зі сметаною або з грибним соусом.</p>
+            <ul class="parts" aria-label="Основні складники">
+              <li>картопля</li>
+              <li>цибуля</li>
+              <li>яйце</li>
+              <li>борошно</li>
+              <li>сіль</li>
+              <li>олія</li>
+              <li>сметана</li>
+            </ul>
+            <details>
+              <summary>Як готують — коротко</summary>
+              <ol>
+                <li>Натерти картоплю й цибулю, відтиснути зайвий сік.</li>
+                <li>Додати яйце, трохи борошна та сіль.</li>
+                <li>Викладати ложкою на розігріту олію й смажити до золотистої скоринки.</li>
+                <li>Подавати одразу зі сметаною.</li>
+              </ol>
+            </details>
+            <p class="note" style="margin-top:1.2rem"><b>Порада з кухні.</b> Не залишай тісто стояти надто довго — картопля темнішає.</p>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="foot">
+      <div class="stitch" aria-hidden="true">
+      </div>
+      <div class="wrap">
+        <div>
+          <h2>Страви України</h2>
+          <p>Навчальний вебсайт із власними векторними малюнками та покадровою анімацією. Усі зображення створено як векторну графіку (SVG) або як анімацію з кадрів.</p>
+          <small>Курсова робота з дисципліни «Комп’ютерна графіка», Вінницький національний технічний університет, 2026. Виконав студент групи 1ПІ-24б Ігнатьєв М. С.</small>
+        </div>
+        <div>
+          <h2>Розділи</h2>
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="soups.html">Перші страви</a></li>
+            <li><a href="mains.html">Основні страви</a></li>
+            <li><a href="snacks.html">Закуски та випічка</a></li>
+            <li><a href="holiday.html">Святковий стіл</a></li>
+            <li><a href="traditions.html">Традиції</a></li>
+            <li><a href="workshop.html">Майстерня</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js" defer>
+    </script>
+  </body>
+</html>

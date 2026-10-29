@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Головна · Українські національні страви</title>
+    <meta name="description" content="Українські національні страви: борщ, вареники, пампушки, деруни та інші — малюнки, історії й прості рецепти.">
+    <meta name="theme-color" content="#27479b">
+    <link rel="icon" href="images/logo/logo.svg" type="image/svg+xml">
+    <link rel="preload" href="fonts/lora-var.woff" as="font" type="font/woff" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Перейти до змісту</a>
+    <header class="top">
+      <div class="wrap">
+        <a class="brand" href="index.html" aria-label="Страви України — на головну"> <img src="images/logo/logo.svg" width="54" height="54" alt=""> <span><b>Страви <span>України</span></b><small>національна кухня в малюнках</small></span> </a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Меню</button>
+        <nav id="nav" aria-label="Основне меню">
+          <ul>
+            <li><a href="index.html" aria-current="page">Головна</a></li>
+            <li><a href="soups.html">Перші страви</a></li>
+            <li><a href="mains.html">Основні страви</a></li>
+            <li><a href="snacks.html">Закуски та випічка</a></li>
+            <li><a href="holiday.html">Святковий стіл</a></li>
+            <li><a href="traditions.html">Традиції</a></li>
+            <li><a href="workshop.html">Майстерня</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="wrap">
+          <div>
+            <h1>Що стоїть на <em>українському</em> столі</h1>
+            <p class="lead">Дванадцять страв, без яких важко уявити нашу кухню: від гарячого борщу до святкової куті. Малюнки, короткі історії та прості кроки приготування — в одному місці.</p>
+            <div class="btns">
+              <a class="btn" href="soups.html#borshch">Почати з борщу</a>
+              <a class="btn alt" href="#finder">Знайти страву</a>
+            </div>
+          </div>
+          <div class="arch">
+            <figure>
+              <picture>
+                <source srcset="images/animated/borshch.webp" type="image/webp">
+                <img src="images/animated/borshch.gif" alt="Анімація: ложка опускає сметану в гарячий борщ, і вона розпливається спіраллю" width="480" height="360" data-anim="images/animated/borshch.gif" data-poster="images/animated/borshch-poster.webp">
+              </picture>
+              <figcaption>Борщ зі сметаною — анімація з 12 кадрів</figcaption>
+            </figure>
+            <button class="pause" type="button" aria-pressed="false">Пауза</button>
+          </div>
+        </div>
+      </section>
+      <div class="stitch" aria-hidden="true">
+      </div>
+      <section class="sec white">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2>Мисник</h2>
+            <p>Так у хаті виставляли тарілки. Ось п’ять страв, з яких найчастіше починається знайомство з українською кухнею — натисніть на тарілку, щоб прочитати про неї.</p>
+          </div>
+          <div class="shelf">
+            <ul>
+              <li><a href="soups.html#borshch"><img src="images/static/borshch.svg" alt="" width="200" height="200" loading="lazy"><span>Борщ</span></a></li>
+              <li><a href="mains.html#varenyky"><img src="images/static/varenyky.svg" alt="" width="200" height="200" loading="lazy"><span>Вареники</span></a></li>
+              <li><a href="snacks.html#pampushky"><img src="images/static/pampushky.svg" alt="" width="200" height="200" loading="lazy"><span>Пампушки</span></a></li>
+              <li><a href="mains.html#deruny"><img src="images/static/deruny.svg" alt="" width="200" height="200" loading="lazy"><span>Деруни</span></a></li>
+              <li><a href="mains.html#holubtsi"><img src="images/static/holubtsi.svg" alt="" width="200" height="200" loading="lazy"><span>Голубці</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="sec" id="finder-sec">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2>Знайти страву</h2>
+            <p>Усі дванадцять сюжетів сайту. Введіть назву чи складник — наприклад «сметана» або «пшоно» — або оберіть розділ.</p>
+          </div>
+          <div class="finder" id="finder">
+            <div class="finder-bar">
+              <label class="sr-only" for="q">Пошук страви</label>
+              <input id="q" type="search" placeholder="Що шукаєте? Наприклад: часник" autocomplete="off">
+              <div class="chips" role="group" aria-label="Розділ">
+                <button class="chip" type="button" data-kind="all" aria-pressed="true">Усі</button>
+                <button class="chip" type="button" data-kind="Перші страви" aria-pressed="false">Перші страви</button>
+                <button class="chip" type="button" data-kind="Основні страви" aria-pressed="false">Основні страви</button>
+                <button class="chip" type="button" data-kind="Закуски та випічка" aria-pressed="false">Закуски та випічка</button>
+                <button class="chip" type="button" data-kind="Святковий стіл" aria-pressed="false">Святковий стіл</button>
+              </div>
+            </div>
+            <ul class="dish-grid">
+              <li data-kind="Перші страви" data-key="Борщ борщ буряк суп сметана пампушки юнеско"><a href="soups.html#borshch"><img src="images/static/borshch.svg" alt="" width="70" height="70" loading="lazy"><span><b>Борщ</b><small>Перші страви</small></span></a></li>
+              <li data-kind="Перші страви" data-key="Капусняк капусняк капуста квашена суп реберця"><a href="soups.html#kapusniak"><img src="images/static/kapusniak.svg" alt="" width="70" height="70" loading="lazy"><span><b>Капусняк</b><small>Перші страви</small></span></a></li>
+              <li data-kind="Перші страви" data-key="Куліш куліш пшоно козацька казан сало"><a href="soups.html#kulish"><img src="images/static/kulish.svg" alt="" width="70" height="70" loading="lazy"><span><b>Куліш</b><small>Перші страви</small></span></a></li>
+              <li data-kind="Основні страви" data-key="Вареники вареники картопля сир вишні сметана тісто"><a href="mains.html#varenyky"><img src="images/static/varenyky.svg" alt="" width="70" height="70" loading="lazy"><span><b>Вареники</b><small>Основні страви</small></span></a></li>
+              <li data-kind="Основні страви" data-key="Голубці голубці капуста рис фарш томат"><a href="mains.html#holubtsi"><img src="images/static/holubtsi.svg" alt="" width="70" height="70" loading="lazy"><span><b>Голубці</b><small>Основні страви</small></span></a></li>
+              <li data-kind="Основні страви" data-key="Деруни деруни картопля оладки картопляники сметана"><a href="mains.html#deruny"><img src="images/static/deruny.svg" alt="" width="70" height="70" loading="lazy"><span><b>Деруни</b><small>Основні страви</small></span></a></li>
+              <li data-kind="Закуски та випічка" data-key="Сало сало закуска хліб часник цибуля"><a href="snacks.html#salo"><img src="images/static/salo.svg" alt="" width="70" height="70" loading="lazy"><span><b>Сало</b><small>Закуски та випічка</small></span></a></li>
+              <li data-kind="Закуски та випічка" data-key="Пампушки пампушки часник булочки дріжджове тісто"><a href="snacks.html#pampushky"><img src="images/static/pampushky.svg" alt="" width="70" height="70" loading="lazy"><span><b>Пампушки</b><small>Закуски та випічка</small></span></a></li>
+              <li data-kind="Закуски та випічка" data-key="Паска паска великдень писанки випічка"><a href="snacks.html#paska"><img src="images/static/paska.svg" alt="" width="70" height="70" loading="lazy"><span><b>Паска</b><small>Закуски та випічка</small></span></a></li>
+              <li data-kind="Святковий стіл" data-key="Кутя кутя пшениця мак мед різдво святий вечір"><a href="holiday.html#kutia"><img src="images/static/kutia.svg" alt="" width="70" height="70" loading="lazy"><span><b>Кутя</b><small>Святковий стіл</small></span></a></li>
+              <li data-kind="Святковий стіл" data-key="Узвар узвар компот сухофрукти святий вечір"><a href="holiday.html#uzvar"><img src="images/static/uzvar.svg" alt="" width="70" height="70" loading="lazy"><span><b>Узвар</b><small>Святковий стіл</small></span></a></li>
+              <li data-kind="Святковий стіл" data-key="Святковий стіл стіл свято дванадцять страв коровай"><a href="holiday.html#stil"><img src="images/static/sviatkovyi-stil.svg" alt="" width="70" height="70" loading="lazy"><span><b>Святковий стіл</b><small>Святковий стіл</small></span></a></li>
+            </ul>
+            <p class="empty" role="status">Нічого не знайдено. Спробуйте коротше слово: «капуста», «мед», «сало».</p>
+          </div>
+        </div>
+      </section>
+      <section class="sec white">
+        <div class="wrap two">
+          <div>
+            <h2>Борщ під охороною ЮНЕСКО</h2>
+            <p>Борщ — найвідоміша українська страва, але не просто рецепт. Це ціла культура приготування: спільне варіння, святкові столи, родинні секрети.</p>
+            <ul class="facts">
+              <li>1 липня 2022 року «Культуру приготування українського борщу» внесли до Списку нематеріальної культурної спадщини ЮНЕСКО, що потребує термінової охорони.</li>
+              <li>У заяві ЮНЕСКО наголошено: внесення не означає виключності чи права власності на страву — воно визнає її значення для українців.</li>
+              <li>Кожен регіон і кожна родина мають свій борщ: з квасолею, з грибами, зі свіжою чи квашеною капустою.</li>
+            </ul>
+            <p style="margin-top:1.2rem"><a href="soups.html#borshch">Докладніше про борщ</a></p>
+          </div>
+          <div class="art" style="max-width:430px;margin-inline:auto;width:100%">
+            <img src="images/static/borshch.svg" alt="Мальована тарілка борщу зі сметаною, кропом і дерев’яною ложкою" width="480" height="480" loading="lazy">
+          </div>
+        </div>
+      </section>
+      <section class="sec">
+        <div class="wrap two flip">
+          <div class="anim-box">
+            <div class="arch" style="max-width:480px">
+              <figure>
+                <picture>
+                  <source srcset="images/animated/vareny.webp" type="image/webp">
+                  <img src="images/animated/vareny.gif" alt="Анімація: вареник вистрибує з тарілки, пірнає в миску зі сметаною і виринає" width="480" height="360" loading="lazy" data-anim="images/animated/vareny.gif" data-poster="images/animated/vareny-poster.webp">
+                </picture>
+                <figcaption>Вареник у сметані — анімація з 8 кадрів</figcaption>
+              </figure>
+              <button class="pause" type="button" aria-pressed="false">Пауза</button>
+            </div>
+          </div>
+          <div>
+            <h2>Вареники, що стрибають самі</h2>
+            <p>У повісті Миколи Гоголя «Ніч перед Різдвом» зі збірки «Вечори на хуторі поблизу Диканьки» вареники самі перелітають із миски у сметану й одразу до рота пана Пацюка. Цей жартівливий епізод ми й намалювали покадрово.</p>
+            <p class="note">Подивіться уважно: у кожному кадрі змінюється положення вареника, а не лише фон. Усі кадри разом зі схемою часу — на сторінці <a href="workshop.html#animation">«Майстерня»</a>.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="foot">
+      <div class="stitch" aria-hidden="true">
+      </div>
+      <div class="wrap">
+        <div>
+          <h2>Страви України</h2>
+          <p>Навчальний вебсайт із власними векторними малюнками та покадровою анімацією. Усі зображення створено як векторну графіку (SVG) або як анімацію з кадрів.</p>
+          <small>Курсова робота з дисципліни «Комп’ютерна графіка», Вінницький національний технічний університет, 2026. Виконав студент групи 1ПІ-24б Ігнатьєв М. С.</small>
+        </div>
+        <div>
+          <h2>Розділи</h2>
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="soups.html">Перші страви</a></li>
+            <li><a href="mains.html">Основні страви</a></li>
+            <li><a href="snacks.html">Закуски та випічка</a></li>
+            <li><a href="holiday.html">Святковий стіл</a></li>
+            <li><a href="traditions.html">Традиції</a></li>
+            <li><a href="workshop.html">Майстерня</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js" defer>
+    </script>
+  </body>
+</html>
